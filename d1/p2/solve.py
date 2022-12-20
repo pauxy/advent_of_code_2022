@@ -1,2 +1,1 @@
-with open("puzzle","r") as f:
-    print(sum(sorted([eval(i) for i in "+".join(f.readlines()).replace("\n","").split("++")])[-3:]))
+print(sum(sorted([eval(i) for i in "+".join(open("puzzle").readlines()).replace("\n","").split("++")])[-3:]))
